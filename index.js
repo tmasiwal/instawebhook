@@ -34,7 +34,7 @@ app.post("/webhook", (req, res) => {
   if (body.object === "instagram" && body.entry) {
     body.entry.forEach((entry) => {
       entry.messaging.forEach((event) => {
-        console.log(event.message.text);
+        console.log(event.message);
         if (
           event.message &&
           event.message.text &&
