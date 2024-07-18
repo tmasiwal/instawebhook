@@ -25,6 +25,7 @@ app.get("/webhook", (req, res) => {
 
 // Endpoint to handle webhook events
 app.post("/webhook", (req, res) => {
+  console.log("this is post request")
   const body = req.body;
 
   console.log("Received webhook:", body);
