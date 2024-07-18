@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const VERIFY_TOKEN = "token_to_verify_instagram_tanuj";
 const ACCESS_TOKEN =
-  "EAAWSNNZAupnkBO6HcFZAQHOQYEvpkZAl0L6jrZAN9pPuuGLsGzl4Ne1dZCIfUfvZBJqCZB0CHP6f5Mu0fMFCf4UN5Xm5XCc2dgpNmrrrlvvmW4nagyiWE8SzZAxVKOCKxio34sf6jHzGghJHeuZAf2PhqJDD15tiQa5X4byYJEHkZAgZB2fCgPV8dbGzDWikNxemDFrZCtayn5ZAor6Iin1UYjCtN467fotAZD"; // Replace with your actual Instagram access token
+  "EAAWSNNZAupnkBOxMykJeSjsUA4OxRfHNJuMeuSG6ZC1mfwHAidCAUimjR7ZAIU6JG9CVQj36MkIo7CwyQqypM6wT6IfCoZBPPgGg2RHcuvECs70YQzzaw7XVOgZAAAgvAJBCG2UeG40LiZCoTk6HsJZCLvtm2eNTe26F7TRDObhEux1ZAvaHF18eXoPesw3l5CzLYNtQ64ZBqwgHjZCUZC6Yi9uKTvN"; // Replace with your actual Instagram access token
 
 app.use(bodyParser.json());
 
@@ -25,7 +25,7 @@ app.get("/webhook", (req, res) => {
 
 // Endpoint to handle webhook events
 app.post("/webhook", (req, res) => {
-  console.log("this is post request")
+  console.log("this is post request");
   const body = req.body;
 
   console.log("Received webhook:", body);
