@@ -5,7 +5,8 @@ const axios = require("axios");
 const app = express();
 const PORT = process.env.PORT || 3000;
 const VERIFY_TOKEN = "token_to_verify_instagram_tanuj";
-const ACCESS_TOKEN ="EAAWSNNZAupnkBOZCHGxfod6WpREoQhwPy7hEYHV8nOdyPpHQls0cW8uWgYem31vEHjjKVTyL6eoQghEbtTDKwcXKEvTXYfa2g2BAIib1lcuvZB7du1nT92EGuMV2l4ffc1OLZB5EG890mNZCZCgCSPfses2oQGIogcvK9IIrZAV1Jg6YNrUwmT4pTkXL3vOm5oC12ZCZCAjRa9yUhZAVe4OfVnlWF0"; // Replace with your actual Instagram access token
+const ACCESS_TOKEN =
+  "EAAWSNNZAupnkBO6zdPVcRhqVfmO2UVX6nfoPml6j0WhUyXxPQup2bZBYZADSsHR7BgjS0ZCWZBjRu14gMWcUd9QtePbMvjhVZAyi9l64CRdA2SQoPGu4RplOzQMRftfReG04csOgkb4OXlGHt5IWHIMALMg6WwnT0kwnZCGtB3I3TZCgKZAaIYiQiDEReXNAXkt9q2tRXtx30onhPzFYFwTiTvMZAu"; // Replace with your actual Instagram access token
 
 app.use(bodyParser.json());
 
