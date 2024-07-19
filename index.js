@@ -31,7 +31,7 @@ app.post("/webhook", (req, res) => {
   console.log("Received webhook:", body);
 
   // Check if the webhook is for a message and contains the text "hello"
-  if (body.object === "page" && body.entry) {
+  if (body.object === "instagram" && body.entry) {
     body.entry.forEach((entry) => {
       entry.messaging.forEach((event) => {
         console.log(event);
