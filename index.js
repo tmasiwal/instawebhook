@@ -54,7 +54,7 @@ app.post("/webhook", (req, res) => {
 
 // Function to send a message using Instagram's API
 function sendMessage(recipientId, messageText) {
-  const url = `https://graph.facebook.com/v13.0/17841452261970349/messages?access_token=${ACCESS_TOKEN}`;
+  const url = `https://graph.facebook.com/v13.0/me/messages?access_token=${ACCESS_TOKEN}`;
 
   const messageData = {
     recipient: {
